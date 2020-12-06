@@ -8,6 +8,7 @@ import Services from "../services/services";
 import Skills from "../skills/skills";
 import Portfolio from "../portfolio/portfolio";
 import Contact from "../contact/contact";
+import Footer from "../footer/footer";
 
 // adding styles
 // ---------------
@@ -188,6 +189,7 @@ const Header = () => {
       <Skills />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 };

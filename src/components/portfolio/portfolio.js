@@ -12,17 +12,17 @@ import styled from "styled-components";
 const projects = [
   {
     image: `${nexter}`,
-    name: "nexter",
+    name: "Nexter",
     website: "https://nexter-shofiqul.netlify.app",
   },
   {
     image: `${natours}`,
-    name: "natours",
+    name: "Natours",
     website: "https://natours-shofiqul.netlify.app",
   },
   {
     image: `${trillo}`,
-    name: "trillo",
+    name: "Trillo",
     website: "https://trillo-shofiqul.netlify.app",
   },
 ];
