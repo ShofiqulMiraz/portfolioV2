@@ -17,6 +17,10 @@ export const SkillTitle = styled.h1`
   font-size: 40px;
   padding-bottom: 30px;
   font-weight: 400;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
 `;
 
 export const SkillCard = styled.div`

@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import contactbg from "./assets/contact-bg.svg";
 
 export const ContactContainer = styled.div`
   padding: 5vh 15px;
-  background-color: #b9b7b7;
+  background-image: url(${contactbg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const ContactTitle = styled.h1`
@@ -13,6 +17,10 @@ export const ContactTitle = styled.h1`
   font-size: 40px;
   padding-bottom: 30px;
   font-weight: 400;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
 `;
 
 export const SocialContainer = styled.div`
