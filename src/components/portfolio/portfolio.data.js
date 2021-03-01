@@ -1,21 +1,15 @@
-import nexter from "./assets/nexter.png";
-import natours from "./assets/natours.png";
-import trillo from "./assets/trillo.png";
+import csalert from "./assets/cs-alert.png";
+import tesla from "./assets/tesla.png";
 
 export const projects = [
   {
-    image: `${nexter}`,
-    name: "Nexter",
-    website: "https://nexter-shofiqul.netlify.app",
+    image: `${csalert}`,
+    name: "cs-alert",
+    website: "https://cs-alert-client.web.app/",
   },
   {
-    image: `${natours}`,
-    name: "Natours",
-    website: "https://natours-shofiqul.netlify.app",
-  },
-  {
-    image: `${trillo}`,
-    name: "Trillo",
-    website: "https://trillo-shofiqul.netlify.app",
+    image: `${tesla}`,
+    name: "tesla",
+    website: "https://tesla-clone-seven.vercel.app/",
   },
 ];
