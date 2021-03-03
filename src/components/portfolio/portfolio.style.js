@@ -11,6 +11,7 @@ export const PortfolioTitle = styled.h1`
   letter-spacing: 0.1875rem;
   color: rgba(0, 0, 0, 0.705);
   font-size: 40px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 400;
   -webkit-background-clip: text;
@@ -21,7 +22,7 @@ export const PortfolioTitle = styled.h1`
 
 export const PortfolioCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 30px;
 `;
 

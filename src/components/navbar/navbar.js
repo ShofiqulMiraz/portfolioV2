@@ -19,7 +19,7 @@ const NavBar = () => {
           <Link to="/">home</Link>
         </MenuLinks>
         <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
-          <Link to="/service">service</Link>
+          <Link to="/services">service</Link>
         </MenuLinks>
         <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/skills">skills</Link>

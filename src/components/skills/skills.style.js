@@ -15,6 +15,7 @@ export const SkillTitle = styled.h1`
   letter-spacing: 0.1875rem;
   color: rgba(0, 0, 0, 0.705);
   font-size: 40px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 400;
   -webkit-background-clip: text;
@@ -40,12 +41,8 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 3px solid #c2e9fb;
   background-color: #c2e9fb;
   padding: 20px;
-  &:hover {
-    border: 3px solid transparent;
-  }
 `;
 
 export const CardImage = styled.img`

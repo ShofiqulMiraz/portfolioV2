@@ -15,6 +15,7 @@ export const ContactTitle = styled.h1`
   letter-spacing: 0.1875rem;
   color: rgba(0, 0, 0, 0.705);
   font-size: 40px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 400;
   -webkit-background-clip: text;
