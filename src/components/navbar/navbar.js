@@ -2,61 +2,48 @@ import logo from "./assets/logo-white.png";
 import menuopen from "./assets/menu.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  Logo,
+  MenuLinks,
+  MenuList,
+  MenuOpen,
+  NavContainer,
+} from "./navbar.style";
 
 const NavBar = () => {
   const [mobilemenuopen, setmobilemenuopen] = useState(false);
   const MenuShow = () => (
     <>
-      <ul className="menu-list">
-        <li
-          className="menu-links"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
-        >
+      <MenuList>
+        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/">home</Link>
-        </li>
-        <li
-          className="menu-links"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
-        >
+        </MenuLinks>
+        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/service">service</Link>
-        </li>
-        <li
-          className="menu-links"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
-        >
+        </MenuLinks>
+        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/skills">skills</Link>
-        </li>
-        <li
-          className="menu-links"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
-        >
+        </MenuLinks>
+        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/portfolio">portfolio</Link>
-        </li>
-        <li
-          className="menu-links"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
-        >
+        </MenuLinks>
+        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
           <Link to="/contact">contact</Link>
-       
-        </li>
-      </ul>
+        </MenuLinks>
+      </MenuList>
     </>
   );
   return (
     <>
-      <nav className="navcontainer">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="menubtn">
-          <img
-            src={menuopen}
-            alt="logo"
-            onClick={() => setmobilemenuopen(!mobilemenuopen)}
-          />
-          {mobilemenuopen && <MenuShow />}
-        </div>
-      </nav>
+      <NavContainer>
+        <Logo src={logo} alt="logo" />
+        <MenuOpen
+          src={menuopen}
+          alt="logo"
+          onClick={() => setmobilemenuopen(!mobilemenuopen)}
+        />
+        {mobilemenuopen && <MenuShow />}
+      </NavContainer>
     </>
   );
 };
