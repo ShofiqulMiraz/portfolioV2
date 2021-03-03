@@ -30,9 +30,6 @@ export const SkillCard = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 30px;
-  @media only screen and (max-width: 290px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const Card = styled.div`

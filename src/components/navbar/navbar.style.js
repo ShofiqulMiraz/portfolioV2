@@ -12,6 +12,7 @@ export const NavContainer = styled.nav`
 
 export const Logo = styled.img`
   max-height: 32px;
+  cursor: pointer;
 `;
 
 export const MenuOpen = styled.img`

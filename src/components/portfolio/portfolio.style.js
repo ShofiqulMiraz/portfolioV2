@@ -22,8 +22,11 @@ export const PortfolioTitle = styled.h1`
 
 export const PortfolioCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
+  @media only screen and (max-width: 250px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const PortfolioButton = styled.a`

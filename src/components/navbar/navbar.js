@@ -1,7 +1,7 @@
 import logo from "./assets/logo-white.png";
 import menuopen from "./assets/menu.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import {
   Logo,
   MenuLinks,
@@ -11,6 +11,7 @@ import {
 } from "./navbar.style";
 
 const NavBar = () => {
+  const history = useHistory();
   const [mobilemenuopen, setmobilemenuopen] = useState(false);
   const MenuShow = () => (
     <>
@@ -36,7 +37,7 @@ const NavBar = () => {
   return (
     <>
       <NavContainer>
-        <Logo src={logo} alt="logo" />
+        <Logo src={logo} alt="logo" onClick={() => history.push("/")} />
         <MenuOpen
           src={menuopen}
           alt="logo"
