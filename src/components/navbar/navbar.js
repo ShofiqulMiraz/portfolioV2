@@ -16,19 +16,19 @@ const NavBar = () => {
   const MenuShow = () => (
     <>
       <MenuList>
-        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
+        <MenuLinks onClick={() => setmobilemenuopen(false)}>
           <Link to="/">home</Link>
         </MenuLinks>
-        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
+        <MenuLinks onClick={() => setmobilemenuopen(false)}>
           <Link to="/services">service</Link>
         </MenuLinks>
-        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
+        <MenuLinks onClick={() => setmobilemenuopen(false)}>
           <Link to="/skills">skills</Link>
         </MenuLinks>
-        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
+        <MenuLinks onClick={() => setmobilemenuopen(false)}>
           <Link to="/portfolio">portfolio</Link>
         </MenuLinks>
-        <MenuLinks onClick={() => setmobilemenuopen(!mobilemenuopen)}>
+        <MenuLinks onClick={() => setmobilemenuopen(false)}>
           <Link to="/contact">contact</Link>
         </MenuLinks>
       </MenuList>
@@ -37,11 +37,18 @@ const NavBar = () => {
   return (
     <>
       <NavContainer>
-        <Logo src={logo} alt="logo" onClick={() => history.push("/")} />
+        <Logo
+          src={logo}
+          alt="logo"
+          onClick={() => {
+            history.push("/");
+            setmobilemenuopen(false);
+          }}
+        />
         <MenuOpen
           src={menuopen}
           alt="logo"
-          onClick={() => setmobilemenuopen(!mobilemenuopen)}
+          onClick={() => setmobilemenuopen(true)}
         />
         {mobilemenuopen && <MenuShow />}
       </NavContainer>
